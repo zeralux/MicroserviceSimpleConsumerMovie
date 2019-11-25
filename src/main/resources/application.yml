@@ -1,2 +1,5 @@
 server:
    port: 8010
+user: #將用戶微服務的URL放進設定檔
+   userServiceUrl: http://localhost:8000/
+   
