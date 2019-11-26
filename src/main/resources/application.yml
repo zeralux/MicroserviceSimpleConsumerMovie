@@ -1,21 +1,5 @@
 server:
    port: 8010
-   
 user: #將用戶微服務的URL放進設定檔
    userServiceUrl: http://localhost:8000/
    
-spring:      
-   application:
-      name: microservice-consumer-movie #註冊到eureka server的名稱
-   #於開發環境可能不需要註冊到eureka server         
-   #cloud:
-   #   service-registry:
-   #      auto-registration:
-   #         enabled: false   
-   
-eureka: 
-   client: 
-      serviceUrl: 
-         defaultZone: http://localhost:8761/eureka/ #欲註冊與查詢之eureka server地址
-   instance:
-      prefer-ip-address: true #註冊IP到eureka server,否則為hostname   

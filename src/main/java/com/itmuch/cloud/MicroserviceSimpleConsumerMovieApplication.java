@@ -6,10 +6,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-public class MicroserviceConsumerMovieApplication {
+public class MicroserviceSimpleConsumerMovieApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MicroserviceConsumerMovieApplication.class, args);
+		SpringApplication.run(MicroserviceSimpleConsumerMovieApplication.class, args);
 	}
 	
 	@Bean

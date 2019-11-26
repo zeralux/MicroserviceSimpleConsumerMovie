@@ -19,9 +19,9 @@ public class MovieController {
 	
 	@GetMapping("/user/{id}")
 	public User findById(@PathVariable Long id) {
-		// User user = this.restTemplate.getForObject("http://localhost:8000/"+id ,User.class);
+		// 雖然可以透過@Value避險hard code問題 , 但事實上當堤共服務者將端點改變後,呼叫服務者仍然必須修改URL
 		
-		// 雖然可以透過@Value避開hard code問題 , 但事實上當堤共服務者將端點改變後,呼叫服務者仍然必須修改URL
+//		User user = this.restTemplate.getForObject("http://localhost:8000/"+id ,User.class);
 		User user = this.restTemplate.getForObject(this.userServiceUrl+id ,User.class);
 		return user;
 	}
